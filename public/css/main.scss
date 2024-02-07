@@ -1,0 +1,23 @@
+@use "../../node_modules/uniformcss/dist/uniform.min.css" as *;
+@use "../../node_modules/flexboxgrid/css/flexboxgrid.min.css" as *;
+
+
+.l-container{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1440px;
+    width: 100%;
+}
+
+@import "partials/pricing";
+
+
+
+
+footer{
+    // position: fixed;
+    // left: 0;
+    // bottom: 0;
+    width: 100%;
+}
