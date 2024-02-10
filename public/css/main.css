@@ -34182,8 +34182,20 @@ body {
   font-family: "Open Sans", sans-serif, Arial, Helvetica;
 }
 
+.pricing .pricing--heading h2:after {
+  height: 0.5rem;
+  content: "";
+  width: 30px;
+  display: block;
+  background: #d2b356;
+  margin: 30px auto 25px auto;
+  padding-top: -10rem;
+}
 .pricing--CARD:hover {
   border: 10px solid #d2b356;
+}
+.pricing--CARD__price_head :nth-child(2) {
+  background-color: #d2b356;
 }
 .pricing--CARD__content ul li {
   padding: 14px 0;

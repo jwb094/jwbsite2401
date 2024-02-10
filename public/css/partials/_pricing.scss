@@ -1,19 +1,35 @@
-
+//[data-component-pricing]{
 
 .pricing{
-    &--heading{
-
+    .pricing--heading{
+        h2:after{
+            height: 0.5rem;
+            content: "";
+            width: 30px;
+            display: block;
+            background: #d2b356;
+            margin: 30px auto 25px auto;
+            padding-top: -10rem;
+        }
     }
     &--CARD{
         &:hover{
             border: 10px solid #d2b356;
         }
-        &__title{
-    
+        &__price_head{
+
+             :nth-child(2){
+                background-color: #d2b356;
+            }
         }
-        &__price{
+     
+
+        // &__title{
     
-        }
+        // }
+        // &__price{
+    
+        // }
         &__content{
             ul{
                 li{
