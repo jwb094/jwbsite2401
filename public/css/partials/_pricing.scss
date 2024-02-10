@@ -1,16 +1,27 @@
 
 
-
-.pricing--CARD{
-
-    &__title{
+.pricing{
+    &--heading{
 
     }
-    &__price{
-
+    &--CARD{
+        &:hover{
+            border: 10px solid #d2b356;
+        }
+        &__title{
+    
+        }
+        &__price{
+    
+        }
+        &__content{
+            ul{
+                li{
+                    padding: 14px 0;
+                    border-bottom: 1px dotted #e1e1e1;
+                }
+            }
+        }
+        &__cta{}
     }
-    &__content{
-        
-    }
-    &__cta{}
 }

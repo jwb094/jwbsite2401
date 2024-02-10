@@ -10,14 +10,13 @@
     width: 100%;
 }
 
-@import "partials/pricing";
-
-
-
-
-footer{
-    // position: fixed;
-    // left: 0;
-    // bottom: 0;
-    width: 100%;
+body{
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
 }
+
+@import "partials/pricing";
+@import "partials/footer";
+
+
+
+

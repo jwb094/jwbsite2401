@@ -34178,6 +34178,20 @@ select {
   width: 100%;
 }
 
+body {
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+}
+
+.pricing--CARD:hover {
+  border: 10px solid #d2b356;
+}
+.pricing--CARD__content ul li {
+  padding: 14px 0;
+  border-bottom: 1px dotted #e1e1e1;
+}
 footer {
   width: 100%;
+}
+footer li > i::before {
+  color: grey;
 }
