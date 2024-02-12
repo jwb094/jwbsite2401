@@ -34182,15 +34182,35 @@ body {
   font-family: "Open Sans", sans-serif, Arial, Helvetica;
 }
 
-.client_grid--item:hover {
-  background: #4B2942;
+.clients_heading_bloc p {
+  word-wrap: break-word;
+}
+.clients_content_bloc {
+  line-height: 2rem;
+}
+
+.client_grid--item img {
+  padding: 15px 25px;
+  z-index: 0;
   opacity: 0.75;
 }
 .client_grid--item:hover .client_grid--item-msg-overlay {
-  display: block;
+  opacity: 1;
 }
-.client_grid--item:hover img {
-  opacity: 0.75;
+.client_grid--item .client_grid--item-msg-overlay {
+  width: auto;
+  height: auto;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  z-index: 1;
+  width: 15rem;
+  top: 0;
+  bottom: 0;
+  right: 0px;
+  left: -30px;
+  margin-left: -1rem;
+  opacity: 0;
+  visibility: unset;
 }
 
 .pricing .pricing--heading h2:after {
