@@ -1,0 +1,14 @@
+.client_grid{
+&--item{
+    &:hover {
+        background: #4B2942;
+        opacity: 0.75;
+        .client_grid--item-msg-overlay {
+            display: block;
+        }
+         img{
+            opacity: 0.75;  
+        }
+    }
+}
+}

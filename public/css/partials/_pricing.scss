@@ -13,14 +13,16 @@
         }
     }
     &--CARD{
+        width: 25rem;
         &:hover{
-            border: 10px solid #d2b356;
+            margin-top:5px;
+            border: 2px solid #d2b356;
         }
         &__price_head{
 
-             :nth-child(2){
-                background-color: #d2b356;
-            }
+            //  :nth-child(2){
+            //     background-color: #d2b356;
+            // }
         }
      
 

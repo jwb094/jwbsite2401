@@ -34182,6 +34182,17 @@ body {
   font-family: "Open Sans", sans-serif, Arial, Helvetica;
 }
 
+.client_grid--item:hover {
+  background: #4B2942;
+  opacity: 0.75;
+}
+.client_grid--item:hover .client_grid--item-msg-overlay {
+  display: block;
+}
+.client_grid--item:hover img {
+  opacity: 0.75;
+}
+
 .pricing .pricing--heading h2:after {
   height: 0.5rem;
   content: "";
@@ -34191,11 +34202,12 @@ body {
   margin: 30px auto 25px auto;
   padding-top: -10rem;
 }
-.pricing--CARD:hover {
-  border: 10px solid #d2b356;
+.pricing--CARD {
+  width: 25rem;
 }
-.pricing--CARD__price_head :nth-child(2) {
-  background-color: #d2b356;
+.pricing--CARD:hover {
+  margin-top: 5px;
+  border: 2px solid #d2b356;
 }
 .pricing--CARD__content ul li {
   padding: 14px 0;
