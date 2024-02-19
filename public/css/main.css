@@ -34182,6 +34182,12 @@ body {
   font-family: "Open Sans", sans-serif, Arial, Helvetica;
 }
 
+.feedback hr {
+  display: block;
+  background: #d2b356;
+  height: 0.5rem;
+}
+
 .clients_heading_bloc p {
   word-wrap: break-word;
 }
