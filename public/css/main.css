@@ -34185,6 +34185,12 @@ body {
 .clients_heading_bloc p {
   word-wrap: break-word;
 }
+.clients_heading_bloc hr {
+  display: block;
+  background: #d2b356;
+  margin: auto auto auto 0;
+  height: 0.5rem;
+}
 .clients_content_bloc {
   line-height: 2rem;
 }
@@ -34221,9 +34227,6 @@ body {
   background: #d2b356;
   margin: 30px auto 25px auto;
   padding-top: -10rem;
-}
-.pricing--CARD {
-  width: 25rem;
 }
 .pricing--CARD:hover {
   margin-top: 5px;

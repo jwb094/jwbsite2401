@@ -1,10 +1,17 @@
 .clients{
     &_heading_bloc{
 
-   p {word-wrap: break-word;}
+        p {word-wrap: break-word;}
+        hr{
+            display: block;
+            background: #d2b356;
+            margin: auto auto auto 0;
+            height: 0.5rem;
+        }
     }
     &_content_bloc{
         line-height: 2rem;
+
     }
 }
 
