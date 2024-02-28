@@ -1,16 +1,45 @@
+//[data-component-pricing]{
 
-
-
-.pricing--CARD{
-
-    &__title{
-
+.pricing{
+    .pricing--heading{
+        h2:after{
+            height: 0.5rem;
+            content: "";
+            width: 30px;
+            display: block;
+            background: #d2b356;
+            margin: 30px auto 25px auto;
+            padding-top: -10rem;
+        }
     }
-    &__price{
+    &--CARD{
+        // width: 25rem;
+        &:hover{
+            margin-top:5px;
+            border: 2px solid #d2b356;
+        }
+        &__price_head{
 
+            //  :nth-child(2){
+            //     background-color: #d2b356;
+            // }
+        }
+     
+
+        // &__title{
+    
+        // }
+        // &__price{
+    
+        // }
+        &__content{
+            ul{
+                li{
+                    padding: 14px 0;
+                    border-bottom: 1px dotted #e1e1e1;
+                }
+            }
+        }
+        &__cta{}
     }
-    &__content{
-        
-    }
-    &__cta{}
 }

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css" />
     <!-- <link rel="stylesheet" href="https://unpkg.com/browse/normalize.css@8.0.1/normalize.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="/js/app.js"></script>
     <title>jwwbsite2401 </title>
 </head>
@@ -136,6 +137,16 @@
         <section data-component="gallery" class="l-container | gallery | py-80">
             <div class="l-container">
                 <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="gallery-container | p-12 | bg-white">
+                            <div class="gallery-item mb-8" data-index="1"><img class="w-100p h-100p"src="https://picsum.photos/301/300" alt=""></div>
+                            <div class="gallery-item mb-8" data-index="2"><img class="w-100p h-100p"src="https://picsum.photos/302/300" alt=""></div>
+                            <div class="gallery-item mb-8" data-index="3"><img class="w-100p h-100p"src="https://picsum.photos/303/300" alt=""></div>
+                            <div class="gallery-item mb-8" data-index="4"><img class="w-100p h-100p"src="https://picsum.photos/304/300" alt=""></div>
+                            <div class="gallery-item mb-8" data-index="5"><img class="w-100p h-100p"src="https://picsum.photos/305/300" alt=""></div>
+                            <div class="gallery-item mb-8" data-index="6"><img class="w-100p h-100p"src="https://picsum.photos/306/300" alt=""></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -177,15 +188,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="grid grid-cols-1 md.grid-cols-3">
-                    <div>.</div>
-                    <div>..</div>
-                    <div>...</div>
-                    <div>....</div>
-                    <div>.....</div>
-                    <div>......</div>
-                    
-                  </div> -->
 
             </div>
         </section>
@@ -194,10 +196,10 @@
             <div class="l-container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="flex  flex-col | p-16  | text-center">
-                            <p>Feedback</p>
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <hr>
+                        <div class=" feedback__heading_bloc | flex  flex-col | p-16  | text-center">
+                            <h3 class="color-warm-gray-500 uppercase">Feedback</p>
+                            <h2 class="text-4xl bold mt-32">Lorem ipsum dolor sit amet</h2>
+                            <hr class=" w-1-12 text-center my-24 mx-auto ">
                         </div>
 
                     </div>
@@ -208,11 +210,11 @@
                             <img class="radius-full" src="https://placehold.co/100x100" alt="">
                         </div>
                         <div class="feedback__item feedback__item-img">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia autem doloremque illo
+                            <p class="color-warm-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia autem doloremque illo
                                 architecto assumenda, quod velit tenetur distinctio magni omnis. Tenetur soluta
                                 recusandae doloremque veniam officiis ratione maiores ipsum aut.</p>
                         </div>
-                        <hr class="border-2 border-black border-solid w-1-12 text-center my-24 mx-auto ">
+                        <hr class=" w-1-12 text-center my-24 mx-auto ">
                         <p> Fname lName - Lorem, ipsum.</p>
                     </div>
                     <div class="feedback__item text-center |  col-xs-12 col-md-4 text-center">
@@ -220,11 +222,11 @@
                             <img class="radius-full" src="https://placehold.co/100x100" alt="">
                         </div>
                         <div class="feedback__item feedback__item-img">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia autem doloremque illo
+                            <p class="color-warm-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia autem doloremque illo
                                 architecto assumenda, quod velit tenetur distinctio magni omnis. Tenetur soluta
                                 recusandae doloremque veniam officiis ratione maiores ipsum aut.</p>
                         </div>
-                        <hr class="border-2 border-black border-solid w-1-12 text-center my-24 mx-auto ">
+                        <hr class="  w-1-12  text-center my-24 mx-auto ">
                         <p> Fname lName - Lorem, ipsum.</p>
                     </div>
                     <div class="feedback__item text-center |  col-xs-12 col-md-4 text-center">
@@ -232,146 +234,184 @@
                             <img class="radius-full" src="https://placehold.co/100x100" alt="">
                         </div>
                         <div class="feedback__item feedback__item-img">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia autem doloremque illo
+                            <p class="color-warm-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia autem doloremque illo
                                 architecto assumenda, quod velit tenetur distinctio magni omnis. Tenetur soluta
                                 recusandae doloremque veniam officiis ratione maiores ipsum aut.</p>
                         </div>
-                        <hr class="border-2 border-black border-solid w-1-12 text-center my-24 mx-auto ">
+                        <hr class=" w-1-12 text-center my-24 mx-auto ">
                         <p> Fname lName - Lorem, ipsum.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section data-component="clients" class="l-container | clients | py-80">
+        <section data-component="clients" class=" | clients | md.p-80">
             <div class="l-container">
 
                 <div class="row">
                     <div class="col-xs-12 col-md-4 | text-center md.text-left">
-                        <p>Lorem</p>
-                        <h2>Lorem ipsum dolor sit amet</h2>
-                        <hr class="border-2 border-black border-solid w-25">
-
-                        <p class="mt-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        <div class="clients_heading_bloc">
+                            <h3 class="mb-16 uppercase bold color-warm-gray-300">Lorem</h3>
+                            <p class="my-12 text-5xl  md.w-6-12 ">Lorem ipsum dolor sit amet</p>
+                            <hr class=" w-2-12 my-24 mx-auto md.mr-auto md.ml-0">
+                        </div>
+                   
+                        <div class="clients_content_bloc">
+                        <p class="mt-12 color-warm-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!</p>
+                            </div>
                     </div>
-                    <div class="col-xs-12 col-md-8">
-                        <div class="client_grid | grid grid-cols-1 md.grid-cols-3 md.row-gap-24">
-                            <div class="client_grid--item | flex justify-content-center">
-                                <img src="https://placehold.co/100x100" alt="">
+                    <div class="col-xs-12 col-md-offset-2 col-md-6">
+                        <div class="client_grid | grid grid-cols-1 md.grid-cols-3 md.row-gap-24 ">
+                            <div class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
+                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100" alt="">
+                                <div class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
+                                    <spa class="text-2xl color-white bold">Tree</span>
+                                </div>
                             </div>
-                            <div class="client_grid--item | flex justify-content-center">
-                                <img src="https://placehold.co/100x100" alt="">
+                            <div class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
+                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100" alt="">
+                                <div class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
+                                    <spa class="text-2xl color-white bold">Lorem</span>
+                                </div>
                             </div>
-                            <div class="client_grid--item | flex justify-content-center">
-                                <img src="https://placehold.co/100x100" alt="">
+                            <div class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
+                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100" alt="">
+                                <div class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
+                                    <spa class="text-2xl color-white bold">Ipsum</span>
+                                </div>
                             </div>
-                            <div class="client_grid--item | flex justify-content-center">
-                                <img src="https://placehold.co/100x100" alt="">
+                            <div class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
+                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100" alt="">
+                                <div class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
+                                    <spa class="text-2xl color-white bold">Tree</span>
+                                </div>
                             </div>
-                            <div class="client_grid--item | flex justify-content-center">
-                                <img src="https://placehold.co/100x100" alt="">
+                            <div class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
+                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100" alt="">
+                                <div class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
+                                    <spa class="text-2xl color-white bold">Lorem</span>
+                                </div>
                             </div>
-                            <div class="client_grid--item | flex justify-content-center">
-                                <img src="https://placehold.co/100x100" alt="">
+                            <div class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
+                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100" alt="">
+                                <div class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
+                                    <spa class="text-2xl color-white bold">Ipsum</span>
+                                </div>
                             </div>
-                            <div class="client_grid--item | flex justify-content-center">
-                                <img src="https://placehold.co/100x100" alt="">
+                            <div class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
+                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100" alt="">
+                                <div class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
+                                    <spa class="text-2xl color-white bold">Tree</span>
+                                </div>
                             </div>
-                            <div class="client_grid--item | flex justify-content-center">
-                                <img src="https://placehold.co/100x100" alt="">
+                            <div class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
+                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100" alt="">
+                                <div class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
+                                    <spa class="text-2xl color-white bold">Lorem</span>
+                                </div>
                             </div>
-                            <div class="client_grid--item | flex justify-content-center">
-                                <img src="https://placehold.co/100x100" alt="">
+                            <div class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
+                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100" alt="">
+                                <div class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
+                                    <spa class="text-2xl color-white bold">Ipsum</span>
+                                </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section data-component="pricing" class="l-container | pricing | py-80">
+        <section data-component-pricing data-component="pricing" class=" pricing | py-80 bg-warm-gray-100">
             <div class="l-container">
                 <div class="row | justify-content-center">
                     <div class="flex flex-col | p-16 | text-center">
-                        <p>your choice</p>
-                        <h2>This our pricing, choose the ideal package for subscription</h2>
+                        <div class="pricing--heading">
+                            <p class="color-warm-gray-500 uppercase">your choice</p>
+                            <h2 class="text-5xl mt-24 bold ">This our pricing, choose the ideal package for subscription</h2>
+                        </div>
                         <hr>
                     </div>
                 </div>
                 <div class="grid md.grid-cols-3 gap-56">
-                    <div class="pricing--CARD | text-center">
-                        <div class="pricing--CARD__title border-black b-solid border-2 | py-24">
-                            <h3>Title</h3>
-                            <p class="italic">subtitle</p>
+                    <div class="pricing--CARD | text-center bg-white md.w-100p">
+                        <div class="pricing--CARD__title | py-24">
+                            <h3 class="uppercase mb-12 bold">Title</h3>
+                            <p class="italic">Lorem ipsum dolor sit.</p>
                         </div>
-                        <div class="pricing--CARD__price | border-black b-solid border-2  py-24 px-12 ">
-                            <h3 class="mb-12"><span>$</span>XX</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos commodi possimus
-                                necessitatibu</p>
+                        <div class="pricing--CARD__price_head ">
+                            <div class="pricing py-24 px-36 m-12 bg-warm-gray-100 ">
+                                <div class="pricing--CARD__price_head | flex flex-row justify-content-center bold"> 
+                                    <span class="text-xl">$</span>
+                                    <h3 class="ml-12 mt-24 mb-12 | flex flex-row text-4xl justify-content-center">XX</h3>
+                                </div>
+                                <p class="italic color-warm-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                            </div>
                         </div>
-                        <div>
-                        </div>
-                        <div class="pricing--CARD__content | border-black b-solid border-2">
-                            <ul class=" m-24">
-                                <l class="my-12">option number 1</li>
+                        <div class="pricing--CARD__content ">
+                            <ul class=" my-24">
+                                <li class="my-12">option number 1</li>
                                     <li class="my-12">option number 2</li>
                                     <li class="my-12">option number 3</li>
                                     <li class="my-12">option number 4</li>
                                     <li class="my-12">option number 5</li>
                             </ul>
-                        </div>
-                        <div class="pricing--CARD__cta | border-black b-solid border-2 | py-24">
-                            <button> Buy today</button>
+                            <div class="pricing--CARD__cta |  | my-32 py-24">
+                                <button class="[ px-16 py-12 ]  [ border-black b-solid border-4 ] uppercase bold"> Buy today</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="pricing--CARD | text-center">
-                        <div class="pricing--CARD__title border-black b-solid border-2 | py-24">
-                            <h3>Title</h3>
-                            <p class="italic">subtitle</p>
+                    <div class="pricing--CARD | text-center bg-white md.w-100p">
+                        <div class="pricing--CARD__title | py-24">
+                            <h3 class="uppercase mb-12 bold">Title</h3>
+                            <p class="italic">Lorem ipsum dolor sit.</p>
                         </div>
-                        <div class="pricing--CARD__price | border-black b-solid border-2  py-24 px-12 ">
-                            <h3 class="mb-12"><span>$</span>XX</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos commodi possimus
-                                necessitatibu</p>
+                        <div class="pricing--CARD__price_head ">
+                            <div class="pricing py-24 px-36 m-12 bg-yellow-200 color-white">
+                                <div class="pricing--CARD__price_head | flex flex-row justify-content-center bold"> 
+                                    <span class="text-xl">$</span>
+                                    <h3 class="ml-12 mt-24 mb-12 | flex flex-row text-4xl justify-content-center">XX</h3>
+                                </div>
+                                <p class="italic ">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                            </div>
                         </div>
-                        <div>
-                        </div>
-                        <div class="pricing--CARD__content | border-black b-solid border-2">
-                            <ul class=" m-24">
-                                <l class="my-12">option number 1</li>
+                        <div class="pricing--CARD__content ">
+                            <ul class=" my-24">
+                                <li class="my-12">option number 1</li>
                                     <li class="my-12">option number 2</li>
                                     <li class="my-12">option number 3</li>
                                     <li class="my-12">option number 4</li>
                                     <li class="my-12">option number 5</li>
                             </ul>
-                        </div>
-                        <div class="pricing--CARD__cta | border-black b-solid border-2 | py-24">
-                            <button> Buy today</button>
+                            <div class="pricing--CARD__cta |  | my-32 py-24">
+                                <button class="[ px-16 py-12 ]  [ border-black b-solid border-4 ] uppercase bold"> Buy today</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="pricing--CARD | text-center">
-                        <div class="pricing--CARD__title border-black b-solid border-2 | py-24">
-                            <h3>Title</h3>
-                            <p class="italic">subtitle</p>
+                    <div class="pricing--CARD | text-center bg-white md.w-100p">
+                        <div class="pricing--CARD__title | py-24">
+                            <h3 class="uppercase mb-12 bold">Title</h3>
+                            <p class="italic">Lorem ipsum dolor sit.</p>
                         </div>
-                        <div class="pricing--CARD__price | border-black b-solid border-2  py-24 px-12 ">
-                            <h3 class="mb-12"><span>$</span>XX</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos commodi possimus
-                                necessitatibu</p>
+                        <div class="pricing--CARD__price_head ">
+                            <div class="pricing py-24 px-36 m-12 bg-warm-gray-100 ">
+                                <div class="pricing--CARD__price_head | flex flex-row justify-content-center bold"> 
+                                    <span class="text-xl">$</span>
+                                    <h3 class="ml-12 mt-24 mb-12 | flex flex-row text-4xl justify-content-center">XX</h3>
+                                </div>
+                                <p class="italic color-warm-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                            </div>
                         </div>
-                        <div>
-                        </div>
-                        <div class="pricing--CARD__content | border-black b-solid border-2">
-                            <ul class=" m-24">
-                                <l class="my-12">option number 1</li>
+                        <div class="pricing--CARD__content ">
+                            <ul class=" my-24">
+                                <li class="my-12">option number 1</li>
                                     <li class="my-12">option number 2</li>
                                     <li class="my-12">option number 3</li>
                                     <li class="my-12">option number 4</li>
                                     <li class="my-12">option number 5</li>
                             </ul>
-                        </div>
-                        <div class="pricing--CARD__cta | border-black b-solid border-2 | py-24">
-                            <button> Buy today</button>
+                            <div class="pricing--CARD__cta |  | my-32 py-24">
+                                <button class="[ px-16 py-12 ]  [ border-black b-solid border-4 ] uppercase bold"> Buy today</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -383,14 +423,15 @@
         <div class="l-container">
             <div class="row ">
                 <div class="col-xs-6 col-md-8">
-                    <div class="box">Copyright 2024</div>
+                    <div class="box">Made with Efficeincy</div>
                 </div>
                 <div class="col-xs-6 col-md-4">
                     <ul class="  [ flex flex-row  justify-content-between md.justify-content-end ]">
-                        <li class=>Ln</li>
-                        <li>G+</li>
-                        <li>Fb</li>
-                        <li>X</li>
+                        <li class=""><i class="fa-brands fa-facebook-f"></i></li>
+                        <li class=""><i class="fa-brands fa-google-plus-g"></i></li>
+                        <li class=""><i class="fa-brands fa-x-twitter"></i></li>
+                        <li class=""><i class="fa-brands fa-instagram"></i></li>
+                        <li class=""><i class="fa-brands fa-behance"></i></li>
                 </div>
             </div>
         </div>
