@@ -1,0 +1,16 @@
+[data-component-believing]{
+
+
+    .believing_bloc__content_bloc  hr{
+        @include golden_line;
+    }
+    .play::before {
+        content: "";
+        position: absolute;
+        border: 15px solid #000;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid transparent;
+        transform: translate(6px, -2px);
+    }
+}

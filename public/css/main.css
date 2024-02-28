@@ -34182,6 +34182,20 @@ body {
   font-family: "Open Sans", sans-serif, Arial, Helvetica;
 }
 
+[data-component-believing] .believing_bloc__content_bloc hr {
+  background: #d2b356;
+  height: 0.5rem;
+}
+[data-component-believing] .play::before {
+  content: "";
+  position: absolute;
+  border: 15px solid #000;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid transparent;
+  transform: translate(6px, -2px);
+}
+
 .feedback hr {
   display: block;
   background: #d2b356;
@@ -34193,7 +34207,6 @@ body {
 }
 .clients_heading_bloc hr {
   display: block;
-  margin: 0 auto;
   background: #d2b356;
   height: 0.5rem;
 }
