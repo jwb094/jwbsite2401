@@ -4,9 +4,10 @@
         p {word-wrap: break-word;}
         hr{
             display: block;
-            background: #d2b356;
-            margin: 0 auto;
-            height: 0.5rem;
+            // background: #d2b356;
+            // margin: 0 auto;
+            // height: 0.5rem;
+            @include golden_line;
         }
     }
     &_content_bloc{
