@@ -1,0 +1,10 @@
+[data-component-home]{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)),url(https://loremflickr.com/g/2012/1290/paris) no-repeat fixed bottom / cover ;
+    // height:100vh;
+    background-size: cover;
+
+    hr {
+        @include golden_line;
+    }
+
+}
