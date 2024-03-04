@@ -7,61 +7,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css" />
     <!-- <link rel="stylesheet" href="https://unpkg.com/browse/normalize.css@8.0.1/normalize.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>jwwbsite2401 </title>
 </head>
 
 <body>
-    <nav class="l-container">
-        <div class="row | py-24">
-            <div class="col-xs-12 col-md-2">
-                Logo
+    <header class="site-header fixed-menu" id="js-site_nav">
+        <div class="l-container">
+            <!-- Mobile::START-->
+            <div class="md.hidden ">
+                <div class=" row | py-24 " id="mobile_navbar">
+                    <div class="col-xs-12 ">
+                        <div class=" mobile-header | flex flex-row [ justify-content-around  relative z-10 ] ">
+                            <div class="mr-auto pr-0 | logo" id="">logo</div>
+                            <div class="  ml-auto tgl_menu" id="">
+                                <buttton aria-label="Open Menu" aria-expanded="false" class="c-button-tgl"
+                                    id="c-button-tgl">
+                                    <div class="bar">
+                                        <span class="hamburger-top top"></span>
+                                        <span class="hamburger-middle middle"></span>
+                                        <span class="hamburger-bottom bottom"></span>
+                                    </div>
+                                </buttton>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 mobile_nav_menu ">
+                        <div class="c-site-nav flex flex-col | ">
+                            <ul class="flex flex-col w-100p mt-auto gap-24 md.h-auto">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-xs-12 col-md-5">
-                <ul class="flex flex-row justify-content-center">
-                    <li>home</li>
-                    <li>Section1</li>
-                    <li>Section2</li>
-                    <li>Section3</li>
-                    <li>Section4</li>
-                    <li>Section5</li>
-                </ul>
+            <!-- Mobile::END-->
+
+            <!-- Desktop::START-->
+            <div class="hidden md.row md.flex | py-24 " id="desktop_navbar">
+                <div class="col-md-3 c">
+                    Logo
+                </div>
+                <div class="col-md-6  justify-content-around">
+                    <div class="ml-24">
+                        <nav class="flex flex-row justify-content-cente">
+                            <ul class="flex flex-row | gap-24">
+                                <li>Home</li>
+                                <li>About Us</li>
+                                <li>Pricing</li>
+                                <li>Resources</li>
+                                <li>Company</li>
+                            </ul>
+
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <ul class="flex flex-row | gap-24  justify-content-end gap-12">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="IconChangeColor" height="24" width="24"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" id="mainIconPathAttribute"></path></svg></li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512" id="IconChangeColor" height="24" width="24"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z" id="mainIconPathAttribute"></path></svg>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" version="1.1" id="IconChangeColor" height="24" width="24"> <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" id="mainIconPathAttribute"></path> </svg>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="IconChangeColor" height="24" width="24"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" id="mainIconPathAttribute"></path></svg>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="currentColor" class="bi bi-behance" viewBox="0 0 16 16" id="IconChangeColor"> <path d="M4.654 3c.461 0 .887.035 1.278.14.39.07.711.216.996.391.286.176.497.426.641.747.14.32.216.711.216 1.137 0 .496-.106.922-.356 1.242-.215.32-.566.606-.997.817.606.176 1.067.496 1.348.922.281.426.461.957.461 1.563 0 .496-.105.922-.285 1.278a2.317 2.317 0 0 1-.782.887c-.32.215-.711.39-1.137.496a5.329 5.329 0 0 1-1.278.176L0 12.803V3h4.654zm-.285 3.978c.39 0 .71-.105.957-.285.246-.18.355-.497.355-.887 0-.216-.035-.426-.105-.567a.981.981 0 0 0-.32-.355 1.84 1.84 0 0 0-.461-.176c-.176-.035-.356-.035-.567-.035H2.17v2.31c0-.005 2.2-.005 2.2-.005zm.105 4.193c.215 0 .426-.035.606-.07.176-.035.356-.106.496-.216s.25-.215.356-.39c.07-.176.14-.391.14-.641 0-.496-.14-.852-.426-1.102-.285-.215-.676-.32-1.137-.32H2.17v2.734h2.305v.005zm6.858-.035c.286.285.711.426 1.278.426.39 0 .746-.106 1.032-.286.285-.215.46-.426.53-.64h1.74c-.286.851-.712 1.457-1.278 1.848-.566.355-1.243.566-2.06.566a4.135 4.135 0 0 1-1.527-.285 2.827 2.827 0 0 1-1.137-.782 2.851 2.851 0 0 1-.712-1.172c-.175-.461-.25-.957-.25-1.528 0-.531.07-1.032.25-1.493.18-.46.426-.852.747-1.207.32-.32.711-.606 1.137-.782a4.018 4.018 0 0 1 1.493-.285c.606 0 1.137.105 1.598.355.46.25.817.532 1.102.958.285.39.496.851.641 1.348.07.496.105.996.07 1.563h-5.15c0 .58.21 1.11.496 1.396zm2.24-3.732c-.25-.25-.642-.391-1.103-.391-.32 0-.566.07-.781.176-.215.105-.356.25-.496.39a.957.957 0 0 0-.25.497c-.036.175-.07.32-.07.46h3.196c-.07-.526-.25-.882-.497-1.132zm-3.127-3.728h3.978v.957h-3.978v-.957z" id="mainIconPathAttribute"></path> </svg>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-xs-12 col-md-5">
-                <ul class="flex flex-row justify-content-end">
-                    <li>Fb</li>
-                    <li>G+</li>
-                    <li>Ln</li>
-                    <li>Insta</li>
-                    <li>X</li>
-                    <li>Be</li>
-                </ul>
-            </div>
+            <!-- Desktop::END-->
         </div>
-    </nav>
+    </header>
     <main class="">
-        <section data-component-home class="| home py-60 h-640   md.h-50vh"> 
+        <section data-component-home class="| home py-60 h-640   md.h-50vh">
             <div class="l-container">
                 <div class="home_bloc | relative | h-640   md.h-50vh | md.pl-24">
                     <!-- <div class="flex flex-col"> -->
-                        <!-- <div class="home_bloc__background-image |  z-1">
+                    <!-- <div class="home_bloc__background-image |  z-1">
                             <img class="h-50vh   md.h-50vh md.w-100p object-cover text-right flex justify-content-end float-right" src="https://loremflickr.com/2012/1290" alt="">
                         </div> -->
-                        <div class="home_bloc__background-content  
+                    <div class="home_bloc__background-content  
                         |  flex flex-col justify-content-start md.justify-content-center 
-                        | absolute z-2 top-0 md.w-50p h-100p"> 
-                            <hr class=" w-2-12 text-left mt-16 mb-32  md.mb-128  mr-auto ml-12 md.ml-0">
-                            <h1 class="text-7xl md.text-9xl mt-48 ml-12 md.ml-0 | color-white">Lorem ipsum dolor sit amet consectetur.</h1>
-                            <p class="light leading-120 | mt-32 ml-12 md.ml-0 | color-white">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi molestiae neque quisquam repellendus consequatur beatae.
-                            </p>
-                            <div class="home_bloc__cta ml-12 md.ml-0 mt-32">                                
-                                <button class="mt-auto p-18 border-4 border-white border-solid bold | w-8-12 md.w-4-12 flex flex-row justify-content-center align-item-normal | color-white">
-                                    Lorem, ipsum dolor.
-                                </button>
-                            </div>
-                            <hr class="  w-2-12 text-left  mt-96 mr-auto ml-12 md.mt-144 md.mb-0 md.ml-0">
+                        | absolute z-2 top-0 md.w-50p h-100p">
+                        <hr class=" w-2-12 text-left mt-16 mb-32  md.mb-128  mr-auto ml-12 md.ml-0">
+                        <h1 class="text-7xl md.text-9xl mt-48 ml-12 md.ml-0 | color-white">Lorem ipsum dolor sit amet
+                            consectetur.</h1>
+                        <p class="light leading-120 | mt-32 ml-12 md.ml-0 | color-white">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi molestiae neque quisquam
+                            repellendus consequatur beatae.
+                        </p>
+                        <div class="home_bloc__cta ml-12 md.ml-0 mt-32">
+                            <button
+                                class="mt-auto p-18 border-4 border-white border-solid bold | w-8-12 md.w-4-12 flex flex-row justify-content-center align-item-normal | color-white">
+                                Lorem, ipsum dolor.
+                            </button>
+                        </div>
+                        <hr class="  w-2-12 text-left  mt-96 mr-auto ml-12 md.mt-144 md.mb-0 md.ml-0">
                         <!-- </div> -->
                     </div>
                 </div>
@@ -72,56 +125,78 @@
 
                 <div class="row">
                     <div class="col-xs-12 col-md-4 | text-left mb-24 md.mb-0">
-                        <p class="color-warm-gray-200 uppercase  semibold mb-24 ">Lorem</p> 
-                        <h2 class="bold text-4xl leading-160 w-9-12">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                        <p class="color-warm-gray-200 uppercase  semibold mb-24 ">Lorem</p>
+                        <h2 class="bold text-4xl leading-160 w-9-12">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</h2>
                         <hr class=" w-1-12 text-left my-24 mr-auto ">
 
                         <p class="mt-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!</p>
                     </div>
                     <div class="col-xs-12 col-md-8">
-                        <div class="success__grid | grid grid-cols-1 md.grid-cols-2  row-gap-48 md.row-gap-24 md.col-gap-24">
+                        <div
+                            class="success__grid | grid grid-cols-1 md.grid-cols-2  row-gap-48 md.row-gap-24 md.col-gap-24">
                             <div class="success__grid--item | flex flex-col  justify-content-start | md.pb-24 md.pr-56">
-                                <div
-                                    class="success_grid--item-img | flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16" id="IconChangeColor"> <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z" id="mainIconPathAttribute"></path> </svg>
+                                <div class="success_grid--item-img | flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                                        class="bi bi-activity" viewBox="0 0 16 16" id="IconChangeColor">
+                                        <path fill-rule="evenodd"
+                                            d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"
+                                            id="mainIconPathAttribute"></path>
+                                    </svg>
                                 </div>
                                 <div class="success_grid--item-content |  ">
                                     <h2 class="text-left | py-24 | bold">Lorem ipsum dolor sit.</h2>
-                                    <p class="leading-180">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae expedita
+                                    <p class="leading-180">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Vitae expedita
                                         nesciunt, perspiciatis aspernatur assumenda corrupti excepturi impedit rem..</p>
                                 </div>
                             </div>
                             <div class="success__grid--item | flex flex-col  justify-content-start | md.pb-24 md.pr-56">
-                                <div
-                                    class="success_grid--item-img | flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16" id="IconChangeColor"> <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z" id="mainIconPathAttribute"></path> </svg>
+                                <div class="success_grid--item-img | flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                                        class="bi bi-activity" viewBox="0 0 16 16" id="IconChangeColor">
+                                        <path fill-rule="evenodd"
+                                            d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"
+                                            id="mainIconPathAttribute"></path>
+                                    </svg>
                                 </div>
                                 <div class="success_grid--item-content |  ">
                                     <h2 class="text-left | py-24 | bold">Lorem ipsum dolor sit.</h2>
-                                    <p class="leading-180">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae expedita
+                                    <p class="leading-180">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Vitae expedita
                                         nesciunt, perspiciatis aspernatur assumenda corrupti excepturi impedit rem..</p>
                                 </div>
                             </div>
                             <div class="success__grid--item | flex flex-col  justify-content-start | md.pb-24 md.pr-56">
-                                <div
-                                    class="success_grid--item-img | flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16" id="IconChangeColor"> <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z" id="mainIconPathAttribute"></path> </svg>
+                                <div class="success_grid--item-img | flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                                        class="bi bi-activity" viewBox="0 0 16 16" id="IconChangeColor">
+                                        <path fill-rule="evenodd"
+                                            d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"
+                                            id="mainIconPathAttribute"></path>
+                                    </svg>
                                 </div>
                                 <div class="success_grid--item-content |  ">
                                     <h2 class="text-left | py-24 | bold">Lorem ipsum dolor sit.</h2>
-                                    <p class="leading-180">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae expedita
+                                    <p class="leading-180">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Vitae expedita
                                         nesciunt, perspiciatis aspernatur assumenda corrupti excepturi impedit rem..</p>
                                 </div>
                             </div>
                             <div class="success__grid--item | flex flex-col  justify-content-start | md.pb-24 md.pr-56">
-                                <div
-                                    class="success_grid--item-img | flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16" id="IconChangeColor"> <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z" id="mainIconPathAttribute"></path> </svg>
+                                <div class="success_grid--item-img | flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                                        class="bi bi-activity" viewBox="0 0 16 16" id="IconChangeColor">
+                                        <path fill-rule="evenodd"
+                                            d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"
+                                            id="mainIconPathAttribute"></path>
+                                    </svg>
                                 </div>
                                 <div class="success_grid--item-content |  ">
                                     <h2 class="text-left | py-24 | bold">Lorem ipsum dolor sit.</h2>
-                                    <p class="leading-180">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae expedita
+                                    <p class="leading-180">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Vitae expedita
                                         nesciunt, perspiciatis aspernatur assumenda corrupti excepturi impedit rem..</p>
                                 </div>
                             </div>
@@ -133,16 +208,22 @@
         <section data-component="gallery" class="gallery | py-80">
             <div class="l-container">
                 <!-- <div class="row"> -->
-                    <div class="col col-md-12">
-                        <div class="gallery-container grid grid-cols-1 md.grid-cols-3 | p-12 | bg-white">
-                            <div class="gallery-item object-cover" data-index="1"><img class="w-100p h-100p"src="https://picsum.photos/301/300" alt=""></div>
-                            <div class="gallery-item object-cover" data-index="2"><img class="w-100p h-100p"src="https://picsum.photos/302/300" alt=""></div>
-                            <div class="gallery-item object-cover" data-index="3"><img class="w-100p h-100p"src="https://picsum.photos/303/300" alt=""></div>
-                            <div class="gallery-item object-cover" data-index="4"><img class="w-100p h-100p"src="https://picsum.photos/304/300" alt=""></div>
-                            <div class="gallery-item object-cover" data-index="5"><img class="w-100p h-100p"src="https://picsum.photos/305/300" alt=""></div>
-                            <div class="gallery-item object-cover" data-index="6"><img class="w-100p h-100p"src="https://picsum.photos/306/300" alt=""></div>
-                        </div>
+                <div class="col col-md-12">
+                    <div class="gallery-container grid grid-cols-1 md.grid-cols-3 | p-12 | bg-white">
+                        <div class="gallery-item object-cover" data-index="1"><img class="w-100p h-100p"
+                                src="https://picsum.photos/301/300" alt=""></div>
+                        <div class="gallery-item object-cover" data-index="2"><img class="w-100p h-100p"
+                                src="https://picsum.photos/302/300" alt=""></div>
+                        <div class="gallery-item object-cover" data-index="3"><img class="w-100p h-100p"
+                                src="https://picsum.photos/303/300" alt=""></div>
+                        <div class="gallery-item object-cover" data-index="4"><img class="w-100p h-100p"
+                                src="https://picsum.photos/304/300" alt=""></div>
+                        <div class="gallery-item object-cover" data-index="5"><img class="w-100p h-100p"
+                                src="https://picsum.photos/305/300" alt=""></div>
+                        <div class="gallery-item object-cover" data-index="6"><img class="w-100p h-100p"
+                                src="https://picsum.photos/306/300" alt=""></div>
                     </div>
+                </div>
                 <!-- </div> -->
             </div>
         </section>
@@ -163,39 +244,44 @@
                                 <hr class=" w-1-12 text-left my-32 mr-auto ">
                             </div>
                             <div class="believing_bloc__content_info | mt-32 | text-left">
-                                <p class="mb-24 light color-warm-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quae rem
+                                <p class="mb-24 light color-warm-gray-200">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Ab, quae rem
                                     laborum illum aut, molestiae officiis deleniti repellendus ratione nobis veniam eius
                                     nesciunt, sit vitae labore? Accusantium aliquam ea eum?</p>
-                                <p class="mb-24 medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quae rem
+                                <p class="mb-24 medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+                                    quae rem
                                     laborum illum aut, molestiae officiis deleniti repellendus ratione nobis veniam eius
                                     nesciunt, sit vitae labore? Accusantium aliquam ea eum?</p>
-                                <p class="medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quae rem laborum illum
+                                <p class="medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quae rem
+                                    laborum illum
                                     aut, molestiae officiis deleniti repellendus ratione nobis veniam eius nesciunt, sit
                                     vitae labore? Accusantium aliquam ea eum?</p>
                             </div>
                             <div class="believing_bloc__cta | text-left  mt-56">
-                                <button class="mt-auto p-18 border-4 border-black border-solid bold | w-6-12 flex flex-row justify-content-center align-item-normal">Watch Video <span class="play"></span></button>
+                                <button
+                                    class="mt-auto p-18 border-4 border-black border-solid bold | w-6-12 flex flex-row justify-content-center align-item-normal">Watch
+                                    Video <span class="play"></span></button>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-4">
                         <div class="believing_bloc_img">
-                            <img class="" src="https://loremflickr.com/335/765" alt="">
+                            <img class="" src="https://loremflickr.com/435/765" alt="">
                         </div>
                     </div>
                 </div>
 
             </div>
         </section>
- 
+
         <section data-component="feedback" class="l-container | feedback | py-80">
             <div class="l-container">
                 <div class="row">
                     <div class="col-xs-12">
                         <div class=" feedback__heading_bloc | flex  flex-col | p-16  | text-center">
                             <h3 class="color-warm-gray-500 uppercase">Feedback</p>
-                            <h2 class="text-4xl bold mt-32">Lorem ipsum dolor sit amet</h2>
-                            <hr class=" w-1-12 text-center my-24 mx-auto ">
+                                <h2 class="text-4xl bold mt-32">Lorem ipsum dolor sit amet</h2>
+                                <hr class=" w-1-12 text-center my-24 mx-auto ">
                         </div>
 
                     </div>
@@ -206,7 +292,8 @@
                             <img class="radius-full" src="https://loremflickr.com/100/100" alt="">
                         </div>
                         <div class="feedback__item feedback__item-img">
-                            <p class="color-warm-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia autem doloremque illo
+                            <p class="color-warm-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                                autem doloremque illo
                                 architecto assumenda, quod velit tenetur distinctio magni omnis. Tenetur soluta
                                 recusandae doloremque veniam officiis ratione maiores ipsum aut.</p>
                         </div>
@@ -218,7 +305,8 @@
                             <img class="radius-full" src="https://loremflickr.com/100/100" alt="">
                         </div>
                         <div class="feedback__item feedback__item-img">
-                            <p class="color-warm-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia autem doloremque illo
+                            <p class="color-warm-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                                autem doloremque illo
                                 architecto assumenda, quod velit tenetur distinctio magni omnis. Tenetur soluta
                                 recusandae doloremque veniam officiis ratione maiores ipsum aut.</p>
                         </div>
@@ -230,7 +318,8 @@
                             <img class="radius-full" src="https://loremflickr.com/100/100" alt="">
                         </div>
                         <div class="feedback__item feedback__item-img">
-                            <p class="color-warm-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia autem doloremque illo
+                            <p class="color-warm-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                                autem doloremque illo
                                 architecto assumenda, quod velit tenetur distinctio magni omnis. Tenetur soluta
                                 recusandae doloremque veniam officiis ratione maiores ipsum aut.</p>
                         </div>
@@ -250,65 +339,93 @@
                             <p class="my-12 text-5xl  md.w-6-12 ">Lorem ipsum dolor sit amet</p>
                             <hr class=" w-2-12 my-24 ml-auto mr-auto md.mr-auto md.ml-0">
                         </div>
-                   
+
                         <div class="clients_content_bloc">
-                        <p class="mt-12 color-warm-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!</p>
-                            </div>
+                            <p class="mt-12 color-warm-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!</p>
+                        </div>
                     </div>
                     <div class="col-xs-12 col-md-offset-2 col-md-6">
                         <div class="client_grid | grid grid-cols-1 md.grid-cols-3 md.row-gap-24 ">
-                            <div class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
-                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100" alt="">
-                                <div class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
+                            <div
+                                class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
+                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100"
+                                    alt="">
+                                <div
+                                    class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
                                     <span class="text-2xl color-white bold">Tree</span>
                                 </div>
                             </div>
-                            <div class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
-                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100" alt="">
-                                <div class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
+                            <div
+                                class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
+                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100"
+                                    alt="">
+                                <div
+                                    class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
                                     <span class="text-2xl color-white bold">Lorem</span>
                                 </div>
                             </div>
-                            <div class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
-                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100" alt="">
-                                <div class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
+                            <div
+                                class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
+                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100"
+                                    alt="">
+                                <div
+                                    class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
                                     <span class="text-2xl color-white bold">Ipsum</span>
                                 </div>
                             </div>
-                            <div class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
-                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100" alt="">
-                                <div class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
+                            <div
+                                class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
+                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100"
+                                    alt="">
+                                <div
+                                    class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
                                     <span class="text-2xl color-white bold">Tree</span>
                                 </div>
                             </div>
-                            <div class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
-                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100" alt="">
-                                <div class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
+                            <div
+                                class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
+                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100"
+                                    alt="">
+                                <div
+                                    class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
                                     <span class="text-2xl color-white bold">Lorem</span>
                                 </div>
                             </div>
-                            <div class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
-                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100" alt="">
-                                <div class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
+                            <div
+                                class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
+                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100"
+                                    alt="">
+                                <div
+                                    class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
                                     <span class="text-2xl color-white bold">Ipsum</span>
                                 </div>
                             </div>
-                            <div class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
-                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100" alt="">
-                                <div class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
+                            <div
+                                class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
+                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100"
+                                    alt="">
+                                <div
+                                    class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
                                     <span class="text-2xl color-white bold">Tree</span>
                                 </div>
                             </div>
-                            <div class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
-                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100" alt="">
-                                <div class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
+                            <div
+                                class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
+                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100"
+                                    alt="">
+                                <div
+                                    class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
                                     <span class="text-2xl color-white bold">Lorem</span>
                                 </div>
                             </div>
-                            <div class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
-                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100" alt="">
-                                <div class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
+                            <div
+                                class="client_grid--item | mx-auto flex justify-content-center relative align-item-center">
+                                <img class="mx-auto text-center | w-100p md.w-auto " src="https://placehold.co/100x100"
+                                    alt="">
+                                <div
+                                    class="client_grid--item-msg-overlay flex align-items-center justify-content-center text-center ">
                                     <span class="text-2xl color-white bold">Ipsum</span>
                                 </div>
                             </div>
@@ -323,7 +440,8 @@
                     <div class="flex flex-col | p-16 | text-center">
                         <div class="pricing--heading">
                             <p class="color-warm-gray-500 uppercase">your choice</p>
-                            <h2 class="text-5xl mt-24 bold ">This our pricing, choose the ideal package for subscription</h2>
+                            <h2 class="text-5xl mt-24 bold ">This our pricing, choose the ideal package for subscription
+                            </h2>
                         </div>
                         <hr>
                     </div>
@@ -336,23 +454,26 @@
                         </div>
                         <div class="pricing--CARD__price_head ">
                             <div class="pricing py-24 px-36 m-12 bg-warm-gray-100 ">
-                                <div class="pricing--CARD__price_head | flex flex-row justify-content-center bold"> 
+                                <div class="pricing--CARD__price_head | flex flex-row justify-content-center bold">
                                     <span class="text-xl">$</span>
-                                    <h3 class="ml-12 mt-24 mb-12 | flex flex-row text-4xl justify-content-center">XX</h3>
+                                    <h3 class="ml-12 mt-24 mb-12 | flex flex-row text-4xl justify-content-center">XX
+                                    </h3>
                                 </div>
-                                <p class="italic color-warm-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                                <p class="italic color-warm-gray-500">Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit</p>
                             </div>
                         </div>
                         <div class="pricing--CARD__content ">
                             <ul class=" my-24">
                                 <li class="my-12">option number 1</li>
-                                    <li class="my-12">option number 2</li>
-                                    <li class="my-12">option number 3</li>
-                                    <li class="my-12">option number 4</li>
-                                    <li class="my-12">option number 5</li>
+                                <li class="my-12">option number 2</li>
+                                <li class="my-12">option number 3</li>
+                                <li class="my-12">option number 4</li>
+                                <li class="my-12">option number 5</li>
                             </ul>
                             <div class="pricing--CARD__cta |  | my-32 py-24">
-                                <button class="[ px-16 py-12 ]  [ border-black b-solid border-4 ] uppercase bold"> Buy today</button>
+                                <button class="[ px-16 py-12 ]  [ border-black b-solid border-4 ] uppercase bold"> Buy
+                                    today</button>
                             </div>
                         </div>
                     </div>
@@ -363,9 +484,10 @@
                         </div>
                         <div class="pricing--CARD__price_head ">
                             <div class="pricing py-24 px-36 m-12 bg-yellow-200 color-white">
-                                <div class="pricing--CARD__price_head | flex flex-row justify-content-center bold"> 
+                                <div class="pricing--CARD__price_head | flex flex-row justify-content-center bold">
                                     <span class="text-xl">$</span>
-                                    <h3 class="ml-12 mt-24 mb-12 | flex flex-row text-4xl justify-content-center">XX</h3>
+                                    <h3 class="ml-12 mt-24 mb-12 | flex flex-row text-4xl justify-content-center">XX
+                                    </h3>
                                 </div>
                                 <p class="italic ">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
                             </div>
@@ -373,13 +495,14 @@
                         <div class="pricing--CARD__content ">
                             <ul class=" my-24">
                                 <li class="my-12">option number 1</li>
-                                    <li class="my-12">option number 2</li>
-                                    <li class="my-12">option number 3</li>
-                                    <li class="my-12">option number 4</li>
-                                    <li class="my-12">option number 5</li>
+                                <li class="my-12">option number 2</li>
+                                <li class="my-12">option number 3</li>
+                                <li class="my-12">option number 4</li>
+                                <li class="my-12">option number 5</li>
                             </ul>
                             <div class="pricing--CARD__cta |  | my-32 py-24">
-                                <button class="[ px-16 py-12 ]  [ border-black b-solid border-4 ] uppercase bold"> Buy today</button>
+                                <button class="[ px-16 py-12 ]  [ border-black b-solid border-4 ] uppercase bold"> Buy
+                                    today</button>
                             </div>
                         </div>
                     </div>
@@ -390,23 +513,26 @@
                         </div>
                         <div class="pricing--CARD__price_head ">
                             <div class="pricing py-24 px-36 m-12 bg-warm-gray-100 ">
-                                <div class="pricing--CARD__price_head | flex flex-row justify-content-center bold"> 
+                                <div class="pricing--CARD__price_head | flex flex-row justify-content-center bold">
                                     <span class="text-xl">$</span>
-                                    <h3 class="ml-12 mt-24 mb-12 | flex flex-row text-4xl justify-content-center">XX</h3>
+                                    <h3 class="ml-12 mt-24 mb-12 | flex flex-row text-4xl justify-content-center">XX
+                                    </h3>
                                 </div>
-                                <p class="italic color-warm-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                                <p class="italic color-warm-gray-500">Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit</p>
                             </div>
                         </div>
                         <div class="pricing--CARD__content ">
                             <ul class=" my-24">
                                 <li class="my-12">option number 1</li>
-                                    <li class="my-12">option number 2</li>
-                                    <li class="my-12">option number 3</li>
-                                    <li class="my-12">option number 4</li>
-                                    <li class="my-12">option number 5</li>
+                                <li class="my-12">option number 2</li>
+                                <li class="my-12">option number 3</li>
+                                <li class="my-12">option number 4</li>
+                                <li class="my-12">option number 5</li>
                             </ul>
                             <div class="pricing--CARD__cta |  | my-32 py-24">
-                                <button class="[ px-16 py-12 ]  [ border-black b-solid border-4 ] uppercase bold"> Buy today</button>
+                                <button class="[ px-16 py-12 ]  [ border-black b-solid border-4 ] uppercase bold"> Buy
+                                    today</button>
                             </div>
                         </div>
                     </div>
@@ -432,7 +558,7 @@
             </div>
         </div>
     </footer>
-    <script src="/js/gallery_lightbox.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 
 </html>

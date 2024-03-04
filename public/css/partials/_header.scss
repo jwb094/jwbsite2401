@@ -1,0 +1,88 @@
+.mobile-header{
+    padding-bottom:1rem;
+    border-bottom: 1px solid grey;
+  }
+
+  .mobile_nav_menu{
+display: none;
+
+&.open_state{
+    display: block;
+    transition: all 0.3s linear;
+}
+  }
+
+  
+  .bar{
+    position:relative;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    bottom:4px;
+    right:15px;
+    .top{
+      height:5px;
+      width:30px;
+      background:#000;
+      border-radius:50px;
+      position:absolute;
+      transition: 0.5s ease;
+      
+      &_open{
+        transform:rotate(-45deg);
+        width:30px;
+        transform-origin:right;
+        top:0px;
+      }
+    }
+    .middle{
+        top: 10px;
+        height:5px;
+        width:30px;
+        background:#000;
+        border-radius:50px;
+        position:absolute;
+        transition: 0.3s ease;
+      
+      
+        &_open{
+          transform:translateX(20px);
+          opacity:0;
+        }
+    }
+    .bottom{
+      top:20px;
+      height:5px;
+      width:30px;
+      background:#000;
+      border-radius:50px;
+      position:absolute;
+      transition: 0.3s ease;
+      
+      
+        &_open{
+          transform:rotate(45deg);
+          width:30px;
+          transform-origin:right;
+          top: 20px;
+        }
+    }
+  }
+  .c-site-nav{
+      transform:translateY(-150%);
+      transition: all 0.5s linear;
+    @media (max-width:1024px){
+      //background-color:red;
+    }
+  }
+  
+  .open-menu{
+      transform:translateY(0%);
+  }
+
+  .fixed-menu{
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    background: white;  
+  }
